@@ -6,11 +6,24 @@
     //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
 
     //ENTRADA
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    let par = []
+    let impar = []
 
     
     //PROCESSAMENTO
+    for(let numero of listaDeNumeros){
+        if(Number.isInteger(numero/2)){
+            par.push(numero)
+        }else{
+            impar.push(numero)
+        }
+    }
 
 
     //SAÍDA
+    par.sort;
+    impar.sort;
+    document.write(`Pares: ${par.join(", ")} || Ímpares: ${impar.join(", ")}`)
 
 </script>
