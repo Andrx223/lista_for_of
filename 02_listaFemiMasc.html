@@ -14,18 +14,18 @@
 
     //PROCESSAMENTO
     for(let genero of listaDeNomes){
-        let escolha = prompt(`O nome ${genero} é masculino ou feminino? (Use M e F)`);
+        let escolha = prompt(`O nome ${genero} é masculino ou feminino? (Use M e F)`).toUpperCase().trim();
         if(escolha == "M"){
-            masculino.push(masculino)
+            masculino.push(genero)
         }else if(escolha == "F"){
-            feminino.push(feminino)
+            feminino.push(genero)
         }else{
-            erro.push(erro)
+            erro.push(genero)
         }
     }
 
     
     //SAÍDA
-    document.write(`Nomes femininos: ${feminino} || Nomes masculinos: ${masculino} || Erros: ${erro}`);
+    document.write(`Nomes femininos: ${feminino.join(", ")} || Nomes masculinos: ${masculino.join(", ")} || Erros: ${erro.join(", ")}`);
 
 </script>

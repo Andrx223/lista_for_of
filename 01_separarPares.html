@@ -7,23 +7,23 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
-    let par = []
-    let impar = []
+    let par = [];
+    let impar = [];
 
     
     //PROCESSAMENTO
     for(let numero of listaDeNumeros){
         if(Number.isInteger(numero/2)){
-            par.push(numero)
+            par.push(numero);
         }else{
-            impar.push(numero)
+            impar.push(numero);
         }
     }
 
 
     //SAÍDA
-    par.sort;
-    impar.sort;
-    document.write(`Pares: ${par.join(", ")} || Ímpares: ${impar.join(", ")}`)
+    par.sort((a, b) => a - b);
+    impar.sort((a, b) => a - b);
+    document.write(`Pares: ${par.join(", ")} || Ímpares: ${impar.join(", ")}`);
 
 </script>
