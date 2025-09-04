@@ -9,8 +9,20 @@
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
 
     //PROCESSAMENTO
-    
+    let nomesComVogal = [];
+    let nomesSemVogal = [];
+    for(let nome of listaDeNomes){
+        let temVogal = prompt(`o nome ${nome} começa com vogal? Use S-Sim N-Não`).toUpperCase().trim();
+        if(temVogal == "S"){
+            nomesComVogal.push(nome);
+        }else{
+            nomesSemVogal.push(nome);
+        }
+    }
+    nomesComVogal.sort();
 
     //SAÍDA
+    document.write(`Esses são os nomes que iniciam com vogal em ordem alfabética: ${nomesComVogal.join(", ")}`);
+    
 
 </script>

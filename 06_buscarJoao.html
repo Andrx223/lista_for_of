@@ -13,14 +13,15 @@
     let outros = [];
     let Joao = [];
     for(let nome of listaDeNomes){
-        if(nome == 'João' || 'Joao'){
-            Joao.push(nome)
-        }else{
-            outros.push(nome)
-        }
+       let temJoao = prompt(`O nome ${nome} tem "João" ou "Joao" incluso? Use S-Sim N-Não`).toUpperCase().trim();
+       if(temJoao == "S"){
+        Joao.push(nome);
+       }else{
+        outros.push(nome);
+       }
     }
     
     //SAÍDAd
-    document.write(`${Joao}`);
+    document.write(`${Joao.join(", ")}`);
 
 </script>
