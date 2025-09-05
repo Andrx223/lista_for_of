@@ -13,8 +13,9 @@
     let outros = [];
     let Joao = [];
     for(let nome of listaDeNomes){
-       let temJoao = prompt(`O nome ${nome} tem "João" ou "Joao" incluso? Use S-Sim N-Não`).toUpperCase().trim();
-       if(temJoao == "S"){
+       let replace = nome.replace("João", "Joao");
+       let temJoao = replace.includes("Joao")
+       if(temJoao === true){
         Joao.push(nome);
        }else{
         outros.push(nome);

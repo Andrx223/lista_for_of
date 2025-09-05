@@ -12,8 +12,8 @@
     let nomesComVogal = [];
     let nomesSemVogal = [];
     for(let nome of listaDeNomes){
-        let temVogal = prompt(`o nome ${nome} começa com vogal? Use S-Sim N-Não`).toUpperCase().trim();
-        if(temVogal == "S"){
+        let primairaLetra = nome.charAt(0)
+        if(primairaLetra == "A" || primairaLetra == "E" || primairaLetra == "I" || primairaLetra == "O" || primairaLetra == "U"){
             nomesComVogal.push(nome);
         }else{
             nomesSemVogal.push(nome);
