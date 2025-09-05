@@ -29,6 +29,6 @@
     
 
     //SAÍDA
-    document.write(`Número pares em ordem CRESCENTE: ${parCrescente.join(", ")} || Número pares em ordem DECRESCENTE: ${parDecrescente.join(", ")} || Número ímpares em ordem CRESCENTE: ${imparCrescente.join(", ")} || Número ímpares em ordem DECRESCENTE: ${imparDecrescente.join(", ")}`);
+    document.write(`Número pares em ordem CRESCENTE: ${par.sort((a, b) => a - b).join(", ")} || Número pares em ordem DECRESCENTE: ${par.sort((a, b) => b - a).join(", ")} || Número ímpares em ordem CRESCENTE: ${impar.sort((a, b) => a - b).join(", ")} || Número ímpares em ordem DECRESCENTE: ${impar.sort((a, b) => b - a).join(", ")}`);
 
 </script>

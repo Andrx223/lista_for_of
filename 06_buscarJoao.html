@@ -14,8 +14,8 @@
     let Joao = [];
     for(let nome of listaDeNomes){
        let replace = nome.replace("João", "Joao");
-       let temJoao = replace.includes("Joao")
-       if(temJoao === true){
+    
+       if(replace.toUpperCase().includes("JOAO") === true){
         Joao.push(nome);
        }else{
         outros.push(nome);
