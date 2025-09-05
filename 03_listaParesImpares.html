@@ -19,15 +19,14 @@
             impar.push(parImpar);
         }
     }
-    let parCrescente = par;
-    let imparCrescente = impar;
-    parCrescente.sort((a, b) => a - b);
-    imparCrescente.sort((a, b) => a - b);
+    let parCrescente = [...par].sort((a, b) => a - b);;
+    let imparCrescente = [...impar].sort((a, b) => a - b);;
     
-    let parDecrescente = par;
-    let imparDecrescente = impar;
-    parDecrescente.sort((a, b) => b - a);
-    imparDecrescente.sort((a, b) => b - a);
+    
+    
+    let parDecrescente = [...par].sort((a, b) => b - a);;
+    let imparDecrescente = [...impar].sort((a, b) => b - a);;
+    
 
     //SAÍDA
     document.write(`Número pares em ordem CRESCENTE: ${parCrescente.join(", ")} || Número pares em ordem DECRESCENTE: ${parDecrescente.join(", ")} || Número ímpares em ordem CRESCENTE: ${imparCrescente.join(", ")} || Número ímpares em ordem DECRESCENTE: ${imparDecrescente.join(", ")}`);
